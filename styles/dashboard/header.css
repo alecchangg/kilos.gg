@@ -1,0 +1,103 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+
+    height: 65px;
+    background-color: black;
+    border-radius: 33px;
+
+}
+
+.leftHeader {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.middleHeader {
+    flex: 1;
+}
+
+.rightHeader {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+
+.headerLogo {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+
+.headerAnalytics, .headerBlocks, .headerDashboard, .headerAccount {
+    color: white;
+    font-weight: 500;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+    transition: background-color 0.15s;
+    transition: display 0.5s; 
+}
+
+.headerAnalytics:hover, .headerBlocks:hover, .headerDashboard:hover, .headerAccount:hover {
+    background-color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+.headerAnalytics {
+    margin-right: 50px;
+}
+
+.headerLogo {
+    cursor: pointer;
+}
+
+.headerSearchIcon {
+    height: 26px;
+    width: 26px;
+    margin-left: 20px;
+}
+
+.headerSearchIcon:hover {
+    cursor: pointer;
+}
+
+
+.headerHamburger {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .headerDashboard, .headerBlocks, .headerAnalytics {
+        display: none;
+    }
+
+    .headerHamburger {
+        display: block;
+        height: 30px;
+        width: 30px;
+        
+    }
+
+    .headerHamburger:hover {
+        cursor: pointer;
+    }
+    
+    .leftHeader {
+        width: 80px;
+    }
+}
+

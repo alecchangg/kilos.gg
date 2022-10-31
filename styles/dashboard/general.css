@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(23, 23, 23);
+    padding-bottom: 1000px;
+    font-family: ubuntu;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+div {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
