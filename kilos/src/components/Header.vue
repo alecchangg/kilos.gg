@@ -10,7 +10,7 @@
         <div class="middleHeader"></div>
         <div class="rightHeader">
             <IButton filename="search-icon.png" class="headerSearchIcon"></IButton>
-            <HButton text="Account" class="btn"></HButton>
+            <HButton text="Account"></HButton>
         </div>
     </div>
 </template>

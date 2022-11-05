@@ -1,5 +1,5 @@
 <template>
-    <div class="btn">{{ text }}</div>
+    <div class="button">{{ text }}</div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-    .btn {
+    .button {
         color: white;
         font-weight: 500;
         padding-top: 6px;
@@ -26,7 +26,7 @@ export default {
         transition: display 0.5s; 
     }
 
-    .btn:hover {
+    .button:hover {
         background-color: rgb(65, 65, 65);
         cursor: pointer;
     }
