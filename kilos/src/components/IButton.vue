@@ -1,5 +1,5 @@
 <template>
-    <img :src="require(`@/assets/img/${filename}`)">
+    <img :src="require(`@/assets/img/${filename}`)" @click="onClick()">
 </template>
 
 <script>
@@ -7,6 +7,11 @@ export default {
     name: 'IButton',
     props: {
         filename: String
+    },
+    methods: {
+        onClick() {
+            this.$emit('btn-click')
+        }
     }
 }
 </script>

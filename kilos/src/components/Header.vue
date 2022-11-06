@@ -2,7 +2,7 @@
     <div class="header-box">
         <div class="leftHeader">
             <IButton filename="logo.webp" class="headerLogo"></IButton>
-            <IButton filename="hamburger-menu.jpeg" class="headerHamburger"></IButton>
+            <Hamburger items="pages" class="headerHamburger"></Hamburger>
             <HButton text="Dashboard" class="btn"></HButton>
             <HButton text="Blocks" class="btn"></HButton>
             <HButton text="Analytics" class="btn"></HButton>
@@ -18,6 +18,7 @@
 <script>
 import HButton from './HButton'
 import IButton from './IButton'
+import Hamburger from './Hamburger'
 
 export default {
     name: 'Header',
@@ -27,6 +28,27 @@ export default {
     components: {
         HButton,
         IButton,
+        Hamburger,
+    },
+    methods: {
+        dropDownMenu() {
+
+        }
+    },
+    data() {
+        return {
+            pages: [
+                {
+                    title: "Dashboard"
+                },
+                {
+                    title: "Blocks"
+                },
+                {
+                    title: "Analytics"
+                }
+            ]
+        }
     }
 }
 </script>
@@ -76,7 +98,7 @@ export default {
     }
 
     .headerHamburger {
-    display: none;
+        display: None
     }
 
     @media (max-width: 800px) {
@@ -86,13 +108,6 @@ export default {
 
         .headerHamburger {
             display: block;
-            height: 30px;
-            width: 30px;
-            
-        }
-
-        .headerHamburger:hover {
-            cursor: pointer;
         }
         
         .leftHeader {
