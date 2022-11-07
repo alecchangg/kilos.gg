@@ -2,8 +2,14 @@
   <div>
     <Header class="head"></Header>
     <div class="mainGrid">
-      <Backdrop class="leftBox">hello world</Backdrop>
-      <Backdrop class="rightBox"> goodbye world</Backdrop>
+      <div class="leftBox">
+        <Backdrop height="500px">hello world</Backdrop>
+      </div>
+      <div class="rightBox">
+        <Backdrop height="250px" marginBottom="20px"> goodbye world</Backdrop>
+        <Backdrop height="250px">Horizon Worlds!</Backdrop>
+      </div>
+      
     </div>
     
   </div>
@@ -31,9 +37,9 @@ export default {
   .mainGrid {
     display: grid;
     grid-template-columns: 300px 1fr;
-    column-gap: 50px;
+    column-gap: 35px;
     position: absolute;
-    top: 130px;
+    top: 110px;
     left: 85px;
     right: 85px;
 
@@ -45,7 +51,9 @@ export default {
   }
 
   .leftBox {
-      height: 500px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
   }
 
   .rightBox {
