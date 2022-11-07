@@ -1,5 +1,5 @@
 <template>
-    <div class="button">{{ text }}</div>
+    <div class="button" @click="onClick()">{{ text }}</div>
 </template>
 
 <script>
@@ -8,6 +8,11 @@ export default {
     name: 'HButton',
     props: {
         text: String
+    },
+    methods: {
+        onClick() {
+            this.$emit('btn-click')
+        }
     }
 }
 

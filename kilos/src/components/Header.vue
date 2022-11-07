@@ -2,7 +2,7 @@
     <div class="header-box">
         <div class="leftHeader">
             <IButton filename="logo.webp" class="headerLogo"></IButton>
-            <Hamburger items="pages" class="headerHamburger"></Hamburger>
+            <Hamburger items=pages class="headerHamburger"></Hamburger>
             <HButton text="Dashboard" class="btn"></HButton>
             <HButton text="Blocks" class="btn"></HButton>
             <HButton text="Analytics" class="btn"></HButton>
@@ -65,6 +65,7 @@ export default {
         background-color: black;
         border-radius: 33px;
         color: white;
+        box-shadow: 3px 1px 10px 5px rgb(79, 79, 79);
     }
 
     .leftHeader {
